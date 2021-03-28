@@ -1,0 +1,26 @@
+---
+msmtp_from: serge.balandine@epicentre.msf.org
+msmtp_accounts:
+      #Account 1
+    - account  : office365
+      tls      : 'on'
+      tls_certcheck: 'off'
+      auth     : 'on'
+      host     : smtp.office365.com
+      port     : 587
+      user     : serge.balandine@epicentre.msf.org
+      password : MIHW.3966
+      #Account 2
+    - account  : gmail
+      tls      : 'off'
+      host     : smtp.gmail.com
+      port     : 587
+      auth     : 'on'
+      user     : example@gmail.example
+      password : some password
+
+msmtp_default_account: office365
+
+## Logging (Select A) "syslog" or B) "file" logging or C) "no" log
+msmtp_log           : syslog
+msmtp_logfile       : /var/log/msmtp.log

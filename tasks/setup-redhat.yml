@@ -1,0 +1,17 @@
+---
+- name: Install  msmtp and mailx
+  dnf:  
+    pkg: ['msmtp', 'mailx']
+    state: present
+  tags: mail    
+  notify: test mail
+
+- name: Copy mstprc conf file
+  template: 
+     src=msmtprc.j2
+     dest=/etc/msmtprc
+     owner=nginx
+     group=nginx
+     mode=0600
+  tags: mail
+  notify: test mail

@@ -1,0 +1,11 @@
+galaxy_info:
+  author: Serge Balandine
+  description: "Deploy msmtp mail for Centos 8"
+  min_ansible_version: 2.4
+  platforms:
+    - name: EL
+      versions:
+        - 8
+  categories:
+  - system
+  - networking

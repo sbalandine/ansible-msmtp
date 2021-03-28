@@ -1,0 +1,5 @@
+---
+# send test mail to admin
+- name: test mail
+  shell: echo "Test mail from new/updated MSTMP at" `hostname` | msmtp --debug -a office365 -t serge.balandine@epicentre.msf.org
+  tags: mail
