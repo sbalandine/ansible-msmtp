@@ -9,7 +9,7 @@ msmtp_accounts:
       host     : smtp.office365.com
       port     : 587
       user     : serge.balandine@epicentre.msf.org
-      password : 2JTry4Nd9vVwua8t
+      password : c2nz969*63#x3Ym733
       #Account 2
     - account  : gmail
       tls      : 'off'
